@@ -1,11 +1,8 @@
-schema_version: 1
-
 context:
-  name: teip
   version: 2.3.2
 
 package:
-  name: ${{ name|lower }}
+  name: teip
   version: ${{ version }}
 
 source:
@@ -43,4 +40,3 @@ about:
 extra:
   recipe-maintainers:
     - danielnachun
-
