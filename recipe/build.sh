@@ -4,7 +4,8 @@ set -o xtrace -o nounset -o pipefail -o errexit
 
 export CARGO_PROFILE_RELEASE_STRIP=symbols
 export CARGO_PROFILE_RELEASE_LTO=fat
-export LIBCLANG_PATH=${PREFIX}/lib
+export LIBCLANG_PATH=${BUILD_PREFIX}/lib
+export PKG_CONFIG_ALLOW_CROSS=1
 
 # check licenses
 cargo-bundle-licenses \
